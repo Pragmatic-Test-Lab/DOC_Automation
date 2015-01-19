@@ -202,7 +202,92 @@ public class CostStatementAffidavitDetailsPage {
 		System.out.println("Created affidavit received Ref No: " + CSAffidvitNo);
 		
 	}
+	public void pickCostStatementToDate(String Date) throws InterruptedException {
+
+		// Click on date text box to open date picker popup.
+		toCalendar.click();
+		dateNotFound = true;
+
+		// Set your expected date, month and year.		
+		String[] dates = Date.split("/");
+		expDate = dates[0];
+		String ExpMonth = dates[1];
+		expMonth = Integer.parseInt(ExpMonth);
+		String ExpYear = dates[2];
+		expYear = Integer.parseInt(ExpYear);
+
+		// This loop will be executed continuously till dateNotFound Is true.
+		while (dateNotFound) {
+			// Retrieve current selected month name from date picker popup.
+			calMonth = datePickerMonth.getText();
+			// Retrieve current selected year name from date picker popup.
+			calYear = datePickerYear.getText();
+
+			// If current selected month and year are same as expected month and
+			// year then go Inside this condition.
+			if (monthList.indexOf(calMonth) + 1 == expMonth	&& (expYear == Integer.parseInt(calYear))) {
+				// Call selectDate function with date to select and set
+				// dateNotFound flag to false.
+				selectDate(expDate);
+				dateNotFound = false;
+			}
+			// If current selected month and year are less than expected month
+			// and year then go Inside this condition.
+			else if (monthList.indexOf(calMonth) + 1 < expMonth	&& (expYear == Integer.parseInt(calYear))
+					|| expYear > Integer.parseInt(calYear)) {
+				// Click on next button of date picker.
+				datePickerNext.click();
+			}
+
+		}
+		Thread.sleep(1000);
+	} 
+public void clicksubmit(){
 	
+	submitButton.click();
+	
+	
+}
+public void pickCostStatementThroughDate(String Date) throws InterruptedException {
+
+	// Click on date text box to open date picker popup.
+	validThroughCalendar.click();
+	dateNotFound = true;
+
+	// Set your expected date, month and year.		
+	String[] dates = Date.split("/");
+	expDate = dates[0];
+	String ExpMonth = dates[1];
+	expMonth = Integer.parseInt(ExpMonth);
+	String ExpYear = dates[2];
+	expYear = Integer.parseInt(ExpYear);
+
+	// This loop will be executed continuously till dateNotFound Is true.
+	while (dateNotFound) {
+		// Retrieve current selected month name from date picker popup.
+		calMonth = datePickerMonth.getText();
+		// Retrieve current selected year name from date picker popup.
+		calYear = datePickerYear.getText();
+
+		// If current selected month and year are same as expected month and
+		// year then go Inside this condition.
+		if (monthList.indexOf(calMonth) + 1 == expMonth	&& (expYear == Integer.parseInt(calYear))) {
+			// Call selectDate function with date to select and set
+			// dateNotFound flag to false.
+			selectDate(expDate);
+			dateNotFound = false;
+		}
+		// If current selected month and year are less than expected month
+		// and year then go Inside this condition.
+		else if (monthList.indexOf(calMonth) + 1 < expMonth	&& (expYear == Integer.parseInt(calYear))
+				|| expYear > Integer.parseInt(calYear)) {
+			// Click on next button of date picker.
+			datePickerNext.click();
+		}
+
+	}
+	Thread.sleep(3000);
+} 
 	
 
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 19 16:39:52 GMT+05:30 2015</td>
+<td>Started on:</td><td>Mon Jan 19 16:49:00 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3589 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7333 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,30 +67,19 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ptl.testcases.CitizenLoginTest.CitizenLogin()'><b>CitizenLogin</b><br>Test class: com.ptl.testcases.CitizenLoginTest<br>Parameters: {Username=DCOMR00004, Password=MM9Rz8mp, Runmode=Yes}</td>
-<td></td>
-<td>3</td>
-<td>com.ptl.testcases.CitizenLoginTest@249cda3</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.ptl.testcases.CitizenLoginTest.CitizenLogin()'><b>CitizenLogin</b><br>Test class: com.ptl.testcases.CitizenLoginTest<br>Parameters: {Username=docdeptadmin, Password=1qaz2wsx@, Runmode=No}</td>
-<td><div><pre>org.testng.SkipException: Skipping the test
-	at com.ptl.testcases.CitizenLoginTest.CitizenLogin(CitizenLoginTest.java:41)
+<td title='com.ptl.testcases.CostStatementCreateNewTest.CreateNewCostStatementTest()'><b>CreateNewCostStatementTest</b><br>Test class: com.ptl.testcases.CostStatementCreateNewTest<br>Parameters: {StatementNo=, Quantity=500.0, Valid Through=25/8/2015, Unit=Kilogram, Document Type=Affidavit, Username=docdeptadmin, Runmode=Yes, FTS=Indo-Sri Lanka Free Trade Agreement, To Date=27/8/2015, Product=Less than 2 weeks old, for breeding, Password=1qaz2wsx@, Status=New, Exporter=D/COM/R/00012}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.ptl.DOC.pages.CostStatementAffidavitDetailsPage.pickDate(CostStatementAffidavitDetailsPage.java:133)
+	at com.ptl.DOC.pages.CostStatementAffidavitDetailsPage.doCreateNewCostStatement(CostStatementAffidavitDetailsPage.java:112)
+	at com.ptl.testcases.CostStatementCreateNewTest.CreateNewCostStatementTest(CostStatementCreateNewTest.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -115,9 +104,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1714364907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1714364907'><pre>org.testng.SkipException: Skipping the test
-	at com.ptl.testcases.CitizenLoginTest.CitizenLogin(CitizenLoginTest.java:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace920394261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920394261'><pre>java.lang.NullPointerException
+	at com.ptl.DOC.pages.CostStatementAffidavitDetailsPage.pickDate(CostStatementAffidavitDetailsPage.java:133)
+	at com.ptl.DOC.pages.CostStatementAffidavitDetailsPage.doCreateNewCostStatement(CostStatementAffidavitDetailsPage.java:112)
+	at com.ptl.testcases.CostStatementCreateNewTest.CreateNewCostStatementTest(CostStatementCreateNewTest.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -143,8 +134,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>0</td>
-<td>com.ptl.testcases.CitizenLoginTest@249cda3</td></tr>
+<td>7</td>
+<td>com.ptl.testcases.CostStatementCreateNewTest@34fccd15</td></tr>
 </table><p>
 </body>
 </html>

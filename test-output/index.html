@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Gayashan\AppData\Local\Temp\testng-eclipse-1280084500\testng-customsuite.xml</span>
+                    <span>C:\Users\Praveen\AppData\Local\Temp\testng-eclipse--636753133\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,35 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ptl.testcases.CitizenLoginTest" hash-for-method="CitizenLogin({Username=docdeptadmin, Password=1qaz2wsx@, Runmode=No})">CitizenLogin({Username=docdeptadmin, Password=1qaz2wsx@, Runmode=No})</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ptl.testcases.CostStatementCreateNewTest" hash-for-method="CreateNewCostStatementTest({StatementNo=, Quantity=500.0, Valid Through=25/8/2015, Unit=Kilogram, Document Type=Affidavit, User...)">CreateNewCostStatementTest({StatementNo=, Quantity=500.0, Valid Through=25/8/2015, Unit=Kilogram, Document Type=Affidavit, User...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ptl.testcases.CitizenLoginTest" hash-for-method="CitizenLogin({Username=DCOMR00004, Password=MM9Rz8mp, Runmode=Yes})">CitizenLogin({Username=DCOMR00004, Password=MM9Rz8mp, Runmode=Yes})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -130,20 +116,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.ptl.testcases.CitizenLoginTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.ptl.testcases.CostStatementCreateNewTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CitizenLogin({Username=docdeptadmin, Password=1qaz2wsx@, Runmode=No})">
-                  </a> <!-- CitizenLogin({Username=docdeptadmin, Password=1qaz2wsx@, Runmode=No}) -->
-                  <span class="method-name">CitizenLogin</span>
-                  <span class="parameters">({Username=docdeptadmin, Password=1qaz2wsx@, Runmode=No})</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test
-	at com.ptl.testcases.CitizenLoginTest.CitizenLogin(CitizenLoginTest.java:41)
+                  <a name="CreateNewCostStatementTest({StatementNo=, Quantity=500.0, Valid Through=25/8/2015, Unit=Kilogram, Document Type=Affidavit, User...)">
+                  </a> <!-- CreateNewCostStatementTest({StatementNo=, Quantity=500.0, Valid Through=25/8/2015, Unit=Kilogram, Document Type=Affidavit, User...) -->
+                  <span class="method-name">CreateNewCostStatementTest</span>
+                  <span class="parameters">({StatementNo=, Quantity=500.0, Valid Through=25/8/2015, Unit=Kilogram, Document Type=Affidavit, Username=docdeptadmin, Runmode=Yes, FTS=Indo-Sri Lanka Free Trade Agreement, To Date=27/8/2015, Product=Less than 2 weeks old, for breeding, Password=1qaz2wsx@, Status=New, Exporter=D/COM/R/00012})</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.ptl.DOC.pages.CostStatementAffidavitDetailsPage.pickDate(CostStatementAffidavitDetailsPage.java:133)
+	at com.ptl.DOC.pages.CostStatementAffidavitDetailsPage.doCreateNewCostStatement(CostStatementAffidavitDetailsPage.java:112)
+	at com.ptl.testcases.CostStatementCreateNewTest.CreateNewCostStatementTest(CostStatementCreateNewTest.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -173,27 +161,11 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.ptl.testcases.CitizenLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CitizenLogin({Username=DCOMR00004, Password=MM9Rz8mp, Runmode=Yes})">
-                  </a> <!-- CitizenLogin({Username=DCOMR00004, Password=MM9Rz8mp, Runmode=Yes}) -->
-                  <span class="method-name">CitizenLogin</span>
-                  <span class="parameters">({Username=DCOMR00004, Password=MM9Rz8mp, Runmode=Yes})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Gayashan\AppData\Local\Temp\testng-eclipse-1280084500\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Praveen\AppData\Local\Temp\testng-eclipse--636753133\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -202,7 +174,7 @@
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ptl.testcases.CitizenLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.ptl.testcases.CostStatementCreateNewTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -242,20 +214,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CitizenLogin')
-data.setCell(0, 2, 'com.ptl.testcases.CitizenLoginTest')
-data.setCell(0, 3, 3558);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'CitizenLogin')
-data.setCell(1, 2, 'com.ptl.testcases.CitizenLoginTest')
-data.setCell(1, 3, 0);
+data.setCell(0, 1, 'CreateNewCostStatementTest')
+data.setCell(0, 2, 'com.ptl.testcases.CostStatementCreateNewTest')
+data.setCell(0, 3, 7239);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -281,18 +249,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ptl.testcases.CitizenLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ptl.testcases.CostStatementCreateNewTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">CitizenLogin({Username=DCOMR00004, Password=MM9Rz8mp, Runmode=Yes})</span>
-                <span class="method-start">5464 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">CitizenLogin({Username=docdeptadmin, Password=1qaz2wsx@, Runmode=No})</span>
-                <span class="method-start">9022 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateNewCostStatementTest({StatementNo=, Quantity=500.0, Valid Through=25/8/2015, Unit=Kilogram, Document Type=Affidavit, User...)</span>
+                <span class="method-start">8006 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
