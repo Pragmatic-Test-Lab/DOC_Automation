@@ -1,7 +1,0 @@
-19/01/2015 15:22:59 devpinoyLogger Configuration file initialized in New Exporter Registration Test
-19/01/2015 15:23:04 devpinoyLogger Web Driver initialized in New Exporter Registration Test
-19/01/2015 15:23:04 devpinoyLogger User is not logged in to the system, so navigating to the log in page
-19/01/2015 15:23:04 devpinoyLogger logged in
-19/01/2015 15:23:06 devpinoyLogger Navigates Home page through the login page
-19/01/2015 15:23:17 devpinoyLogger User already loged in, so do not want to go to the log in page
-19/01/2015 15:23:17 devpinoyLogger Navigates Home page through the top menu

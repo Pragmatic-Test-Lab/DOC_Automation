@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ptl.testcases.doc244duplicateemail">
+      <class name="com.ptl.testcases.CitizenLoginTest">
         <methods>
+          <include name="CitizenLogin" invocation-numbers="1"/>
           <include name="init"/>
-          <include name="RegNewExpTest" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.ptl.testcases.doc244duplicateemail -->
+      </class> <!-- com.ptl.testcases.CitizenLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
