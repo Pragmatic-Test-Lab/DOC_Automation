@@ -126,6 +126,20 @@ public class RequestCopies {
 	public void clickCOORefField(){
 		COOReferenceNo.click();
 	}
+	public String doresetcheck(){
+		System.out.println("no copies:"+NoOfCopies.getAttribute("value"));
+		System.out.println("collect:"+ CollectionMethod.getAttribute("value"));
+		System.out.println("cooref:"+COOReferenceNo.getText());
+		CollectionMethod.getText();
+		
+		int foo=  Integer.parseInt(NoOfCopies.getAttribute("value"));
+		int foo1=  Integer.parseInt(CollectionMethod.getAttribute("value"));
+		Assert.assertTrue(COOReferenceNo.getText().equals("") && foo==0 && foo1==0,
+				"not reset");
+		
+return COOReferenceNo.getText();	
+		
+	}
 	
 	public LoginCredentialsPage doRequestCopies(String ExpRegNo, String COORefNo, String NoofCopies, 
 			String CollectMethod, String Postal, String RecNo){

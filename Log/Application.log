@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 20/01/2015 13:11:30 devpinoyLogger Configuration file initialized in New Exporter Registration Test
 20/01/2015 13:11:35 devpinoyLogger Web Driver initialized in New Exporter Registration Test
 20/01/2015 13:11:35 devpinoyLogger User is not logged in to the system, so navigating to the log in page
 20/01/2015 13:11:36 devpinoyLogger logged in
 20/01/2015 13:11:39 devpinoyLogger Navigates Home page through the login page
 20/01/2015 13:12:06 devpinoyLogger Successfully saved COO application
+=======
+20/01/2015 12:04:40 devpinoyLogger Configuration file initialized in New Exporter Registration Test
+20/01/2015 12:05:13 devpinoyLogger Web Driver initialized in New Exporter Registration Test
+20/01/2015 12:05:14 devpinoyLogger User is not logged in to the system, so navigating to the log in page
+20/01/2015 12:05:16 devpinoyLogger logged in
+20/01/2015 12:05:17 devpinoyLogger Navigates Home page through the login page
+20/01/2015 12:05:23 devpinoyLogger Successfully registered a new exporter
+>>>>>>> refs/remotes/origin/master

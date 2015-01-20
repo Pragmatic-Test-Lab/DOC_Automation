@@ -119,10 +119,13 @@ public class ExporterRegPage {
 	}
 
 	public void getExpRegNoAttribute(){
-		//String readOnly = expRegNo.getAttribute("readonly");
-		//System.out.println("Read Only Text "+readOnly);
-		if(expRegNo.getAttribute("readonly").equals("true"))
-			System.out.println("Uneditable");
+		String readOnly = expRegNo.getAttribute("readonly");
+		System.out.println("Read Only Text "+readOnly);
+		Assert.assertTrue(expRegNo.getAttribute("readonly").equals("true"),
+				"Editable");
+		
+	//	if(expRegNo.getAttribute("readonly").equals("true"))
+	//		System.out.println("Uneditable");
 
 	}
 	public String getErrorMessage(){

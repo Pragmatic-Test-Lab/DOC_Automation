@@ -17,6 +17,7 @@ import com.ptl.DOC.pages.TopMenu;
 import com.ptl.util.TestUtil;
 
 public class printcancelled extends TestBase {
+	ManageCOOPage manCooPage;
 	@BeforeSuite
 	public void init() {
 		initConfiguration();
@@ -60,11 +61,13 @@ public class printcancelled extends TestBase {
 
 		}
 		
-		ManageCOOPage manCooPage=homePage.gotoManageCOOPage();
+		 manCooPage=homePage.gotoManageCOOPage();
 		manCooPage.doSearchforCOO(null, "Printed", null, null, null, null, null);;
 		manCooPage.changeStatus("Cancelled");	
 
 	}
+		
+		manCooPage.getErrorMessage2();
 	}
 	
 	@DataProvider

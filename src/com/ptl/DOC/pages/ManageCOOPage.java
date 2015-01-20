@@ -79,6 +79,8 @@ public class ManageCOOPage {
 	WebElement ConfirmPrint;
 	@FindBy(xpath = Constants.PrintPageHeaderField)
 	WebElement PrintPageHeaderField;
+	@FindBy(xpath=Constants.SuccessMessage3)
+	WebElement SuccessMessage3;
 
 	List<WebElement> noOfColumns;
 	List<String> monthList = Arrays.asList("January", "February", "March",
@@ -401,6 +403,13 @@ public class ManageCOOPage {
 							+ COORefNos.get(i).getText() + " with status of "
 							+ COOStatuses.get(i).getText());
 		}
+	}
+	public String getErrorMessage2(){
+		Assert.assertTrue(SuccessMessage3.getText().equals(Constants.SuccessMessage4),
+				"error in changing status");
+						
+		return SuccessMessage3.getText();	
+		
 	}
 
 	public void printCOO(String type, String NoOfCopies) {

@@ -154,6 +154,8 @@ public class Constants {
 	public static final String ConfirmPrint = "//*[@id='printModalPopUp']/descendant::button[text()='Print']";
 	public static final String PrintPageHeaderField = "//*[@id='es-content']/div[1]/div[1]";
 	public static final String CorrectPrintPageHeader = "Print Certificates of Origin";
+	public static final String SuccessMessage3=".//*[@id='messagesDiv']/div";
+	public static final String SuccessMessage4="The record was successfully updated!";
 	
 	
 	
