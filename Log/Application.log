@@ -1,5 +1,7 @@
-19/01/2015 16:48:52 devpinoyLogger Configuration file initialized in New Cost Statement Test
-19/01/2015 16:49:00 devpinoyLogger Web Driver initialized in New Cost Statement Test
-19/01/2015 16:49:00 devpinoyLogger User is not logged in to the system, so navigating to the log in page
-19/01/2015 16:49:01 devpinoyLogger logged in
-19/01/2015 16:49:02 devpinoyLogger Navigates Home page through the login page
+20/01/2015 09:03:20 devpinoyLogger Configuration file initialized in New Exporter Registration Test
+20/01/2015 09:03:28 devpinoyLogger Web Driver initialized in New Exporter Registration Test
+20/01/2015 09:03:28 devpinoyLogger User is not logged in to the system, so navigating to the log in page
+20/01/2015 09:03:29 devpinoyLogger logged in
+20/01/2015 09:03:30 devpinoyLogger Navigates Home page through the login page
+20/01/2015 09:03:33 devpinoyLogger User already loged in, so do not want to go to the log in page
+20/01/2015 09:03:33 devpinoyLogger Navigates Home page through the top menu
