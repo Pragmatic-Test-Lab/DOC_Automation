@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Praveen\AppData\Local\Temp\testng-eclipse-1938743380\testng-customsuite.xml</span>
+                    <span>C:\Users\Praveen\AppData\Local\Temp\testng-eclipse-925335190\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ptl.testcases.printcancelled" hash-for-method="TestSuspendExporter({FTA=Indo-Sri Lanka Free Trade Agreement, From=12/12/2014, Username=docdeptadmin, TempRef=, Runmode=...)">TestSuspendExporter({FTA=Indo-Sri Lanka Free Trade Agreement, From=12/12/2014, Username=docdeptadmin, TempRef=, Runmode=...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ptl.testcases.resetbuttontest" hash-for-method="ResetButton({Username=docdeptadmin, Runmode=No, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal ...)">ResetButton({Username=docdeptadmin, Runmode=No, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ptl.testcases.resetbuttontest" hash-for-method="ResetButton({Username=DCOMR00015, Runmode=Yes, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal A...)">ResetButton({Username=DCOMR00015, Runmode=Yes, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal A...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,42 +130,20 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.ptl.testcases.printcancelled</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.ptl.testcases.resetbuttontest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestSuspendExporter({FTA=Indo-Sri Lanka Free Trade Agreement, From=12/12/2014, Username=docdeptadmin, TempRef=, Runmode=...)">
-                  </a> <!-- TestSuspendExporter({FTA=Indo-Sri Lanka Free Trade Agreement, From=12/12/2014, Username=docdeptadmin, TempRef=, Runmode=...) -->
-                  <span class="method-name">TestSuspendExporter</span>
-                  <span class="parameters">({FTA=Indo-Sri Lanka Free Trade Agreement, From=12/12/2014, Username=docdeptadmin, TempRef=, Runmode=Yes, Password=1qaz2wsx@, Status=All, COO Code=, Exporter=Test Exporter PWC, To=8/1/2015})</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody/tr/td[1]/form/div/u&quot;}
-Command duration or timeout: 10.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
-System info: host: &apos;PTL-PC&apos;, ip: &apos;192.168.1.35&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
-Session ID: 1fcb3528-c82d-4c91-b726-658624a7f0ce
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=35.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at com.ptl.DOC.pages.ManageCOOPage.changeStatus(ManageCOOPage.java:298)
-	at com.ptl.testcases.printcancelled.TestSuspendExporter(printcancelled.java:66)
+                  <a name="ResetButton({Username=docdeptadmin, Runmode=No, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal ...)">
+                  </a> <!-- ResetButton({Username=docdeptadmin, Runmode=No, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal ...) -->
+                  <span class="method-name">ResetButton</span>
+                  <span class="parameters">({Username=docdeptadmin, Runmode=No, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal Address=87, Mayfield Road, Password=1qaz2wsx@, Receipt No=7847284.0, Exporter Registration=D/COM/R/00015, Collection Method=By Post})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test
+	at com.ptl.testcases.resetbuttontest.ResetButton(resetbuttontest.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -176,23 +168,32 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody/tr/td[1]/form/div/u&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
-System info: host: &apos;PTL-PC&apos;, ip: &apos;192.168.1.35&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Praveen/AppData/Local/Temp/anonymous1190297928929856666webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Praveen/AppData/Local/Temp/anonymous1190297928929856666webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ptl.testcases.resetbuttontest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResetButton({Username=DCOMR00015, Runmode=Yes, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal A...)">
+                  </a> <!-- ResetButton({Username=DCOMR00015, Runmode=Yes, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal A...) -->
+                  <span class="method-name">ResetButton</span>
+                  <span class="parameters">({Username=DCOMR00015, Runmode=Yes, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal Address=87, Mayfield Road, Password=A+4bi4VX, Receipt No=7847284.0, Exporter Registration=D/COM/R/00015, Collection Method=By Post})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Praveen\AppData\Local\Temp\testng-eclipse-1938743380\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Praveen\AppData\Local\Temp\testng-eclipse-925335190\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -201,7 +202,7 @@ Driver info: driver.version: unknown
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ptl.testcases.printcancelled&quot;/&gt;
+      &lt;class name=&quot;com.ptl.testcases.resetbuttontest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -241,16 +242,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestSuspendExporter')
-data.setCell(0, 2, 'com.ptl.testcases.printcancelled')
-data.setCell(0, 3, 14000);
+data.setCell(0, 1, 'ResetButton')
+data.setCell(0, 2, 'com.ptl.testcases.resetbuttontest')
+data.setCell(0, 3, 10030);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ResetButton')
+data.setCell(1, 2, 'com.ptl.testcases.resetbuttontest')
+data.setCell(1, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -276,16 +281,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ptl.testcases.printcancelled</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ptl.testcases.resetbuttontest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TestSuspendExporter({FTA=Indo-Sri Lanka Free Trade Agreement, From=12/12/2014, Username=docdeptadmin, TempRef=, Runmode=...)</span>
-                <span class="method-start">13393 ms</span>
+                <span class="method-name">ResetButton({Username=DCOMR00015, Runmode=Yes, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal A...)</span>
+                <span class="method-start">34231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ResetButton({Username=docdeptadmin, Runmode=No, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal ...)</span>
+                <span class="method-start">44261 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -18,6 +18,7 @@ import com.ptl.DOC.pages.TopMenu;
 import com.ptl.util.TestUtil;
 
 public class resetbuttontest extends TestBase{
+	RequestCopies ReqcopiesPage;
 	@BeforeSuite
 	public void init(){
 		initConfiguration();
@@ -51,13 +52,13 @@ public class resetbuttontest extends TestBase{
 			APPLICATION_LOGS.debug("Navigates Home page through the top menu");			
 		}
 		
-		RequestCopies ReqcopiesPage = homePage.gotoRequestcopyPage();
+		ReqcopiesPage = homePage.gotoRequestcopyPage();
 		ReqcopiesPage.doReset(data.get("Exporter Registration"), data.get("COO Ref No"), data.get("No of Copies"), 
 				data.get("Collection Method"), data.get("Postal Address"), data.get("Receipt No")) ;
 		
 		APPLICATION_LOGS.debug("Successfully registered a new exporter");
 		}
-		
+		ReqcopiesPage.doresetcheck();
 	}
 	@DataProvider
 	public Object[][] getRequestData(){

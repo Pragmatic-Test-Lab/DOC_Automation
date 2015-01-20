@@ -1,5 +1,6 @@
-20/01/2015 10:38:37 devpinoyLogger Configuration file initialized in Suspend Exporter Test
-20/01/2015 10:38:50 devpinoyLogger Web Driver initialized in Suspend Exporter Test
-20/01/2015 10:38:50 devpinoyLogger User is not logged in to the system, so navigating to the log in page
-20/01/2015 10:38:51 devpinoyLogger logged in
-20/01/2015 10:38:52 devpinoyLogger Navigates Home page through the login page
+20/01/2015 12:04:40 devpinoyLogger Configuration file initialized in New Exporter Registration Test
+20/01/2015 12:05:13 devpinoyLogger Web Driver initialized in New Exporter Registration Test
+20/01/2015 12:05:14 devpinoyLogger User is not logged in to the system, so navigating to the log in page
+20/01/2015 12:05:16 devpinoyLogger logged in
+20/01/2015 12:05:17 devpinoyLogger Navigates Home page through the login page
+20/01/2015 12:05:23 devpinoyLogger Successfully registered a new exporter

@@ -1,60 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="1" failed="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14232" started-at="2015-01-20T05:08:50Z" finished-at="2015-01-20T05:09:04Z">
+  <suite name="Default suite" duration-ms="10456" started-at="2015-01-20T06:35:13Z" finished-at="2015-01-20T06:35:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14232" started-at="2015-01-20T05:08:50Z" finished-at="2015-01-20T05:09:04Z">
-      <class name="com.ptl.testcases.printcancelled">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.ptl.testcases.printcancelled@76b51252]" name="init" is-config="true" duration-ms="13362" started-at="2015-01-20T10:38:36Z" finished-at="2015-01-20T10:38:50Z">
+    <test name="Default test" duration-ms="10456" started-at="2015-01-20T06:35:13Z" finished-at="2015-01-20T06:35:24Z">
+      <class name="com.ptl.testcases.resetbuttontest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.ptl.testcases.resetbuttontest@1219a6d9]" name="init" is-config="true" duration-ms="33821" started-at="2015-01-20T12:04:39Z" finished-at="2015-01-20T12:05:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="TestSuspendExporter(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.printcancelled@76b51252]" name="TestSuspendExporter" duration-ms="14000" started-at="2015-01-20T10:38:50Z" data-provider="getActivateExporterData" finished-at="2015-01-20T10:39:04Z">
+        <test-method status="PASS" signature="ResetButton(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.resetbuttontest@1219a6d9]" name="ResetButton" duration-ms="10030" started-at="2015-01-20T12:05:14Z" data-provider="getRequestData" finished-at="2015-01-20T12:05:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{FTA=Indo-Sri Lanka Free Trade Agreement, From=12/12/2014, Username=docdeptadmin, TempRef=, Runmode=Yes, Password=1qaz2wsx@, Status=All, COO Code=, Exporter=Test Exporter PWC, To=8/1/2015}]]>
+                <![CDATA[{Username=DCOMR00015, Runmode=Yes, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal Address=87, Mayfield Road, Password=A+4bi4VX, Receipt No=7847284.0, Exporter Registration=D/COM/R/00015, Collection Method=By Post}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResetButton -->
+        <test-method status="SKIP" signature="ResetButton(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.resetbuttontest@1219a6d9]" name="ResetButton" duration-ms="0" started-at="2015-01-20T12:05:24Z" data-provider="getRequestData" finished-at="2015-01-20T12:05:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=docdeptadmin, Runmode=No, COO Ref No=FTA_COUNTRY_CODE/2015/0003, No of Copies=5.0, Postal Address=87, Mayfield Road, Password=1qaz2wsx@, Receipt No=7847284.0, Exporter Registration=D/COM/R/00015, Collection Method=By Post}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//tbody/tr/td[1]/form/div/u"}
-Command duration or timeout: 10.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'PTL-PC', ip: '192.168.1.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
-Session ID: 1fcb3528-c82d-4c91-b726-658624a7f0ce
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=35.0}]]]>
+              <![CDATA[Skipping the test]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//tbody/tr/td[1]/form/div/u"}
-Command duration or timeout: 10.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'PTL-PC', ip: '192.168.1.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
-Session ID: 1fcb3528-c82d-4c91-b726-658624a7f0ce
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=35.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at com.ptl.DOC.pages.ManageCOOPage.changeStatus(ManageCOOPage.java:298)
-	at com.ptl.testcases.printcancelled.TestSuspendExporter(printcancelled.java:66)
+              <![CDATA[org.testng.SkipException: Skipping the test
+	at com.ptl.testcases.resetbuttontest.ResetButton(resetbuttontest.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -79,20 +61,13 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//tbody/tr/td[1]/form/div/u"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'PTL-PC', ip: '192.168.1.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Praveen/AppData/Local/Temp/anonymous1190297928929856666webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Praveen/AppData/Local/Temp/anonymous1190297928929856666webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestSuspendExporter -->
-      </class> <!-- com.ptl.testcases.printcancelled -->
+        </test-method> <!-- ResetButton -->
+      </class> <!-- com.ptl.testcases.resetbuttontest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
