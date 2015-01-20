@@ -69,23 +69,8 @@ public class CostStatementCreateNewTest extends TestBase {
 
 		APPLICATION_LOGS.debug("Successfully created a cost statement");
 
-		try {
-			costStatementPage.pickCostStatementThroughDate(data
-					.get("Valid Through"));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 
-		try {
-			costStatementPage.pickCostStatementToDate(data.get("To Date"));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		costStatementPage.clicksubmit();
-
-		APPLICATION_LOGS.debug("Successfully created a cost statement");
 
 	}
 
