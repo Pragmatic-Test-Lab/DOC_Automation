@@ -1,6 +1,9 @@
-20/01/2015 15:35:50 devpinoyLogger Configuration File initialized in Login Test
-20/01/2015 15:35:56 devpinoyLogger Browser initialized in Login Test
-20/01/2015 15:35:56 devpinoyLogger User is not logged in to the system, so navigating to the log in page
-20/01/2015 15:35:57 devpinoyLogger logged in
-20/01/2015 15:35:58 devpinoyLogger Navigates Home page through the login page
-20/01/2015 15:35:59 devpinoyLogger Successfully logged out of the system.
+20/01/2015 16:07:14 devpinoyLogger Configuration file initialized in Suspend Exporter Test
+20/01/2015 16:07:19 devpinoyLogger Web Driver initialized in Suspend Exporter Test
+20/01/2015 16:07:19 devpinoyLogger User is not logged in to the system, so navigating to the log in page
+20/01/2015 16:07:23 devpinoyLogger logged in
+20/01/2015 16:07:25 devpinoyLogger Navigates Home page through the login page
+20/01/2015 16:07:34 devpinoyLogger Mandetory field check successfull
+20/01/2015 16:07:34 devpinoyLogger User already loged in, so do not want to log in again
+20/01/2015 16:07:34 devpinoyLogger Move to the Home Page using the top menu
+20/01/2015 16:07:42 devpinoyLogger Mandetory field check successfull

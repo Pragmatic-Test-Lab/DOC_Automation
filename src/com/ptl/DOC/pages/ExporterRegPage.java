@@ -85,7 +85,7 @@ public class ExporterRegPage {
 		return loginCredPage;
 		
 	}
-	public LoginCredentialsPage doRegisterNewExporter2(String CompanyName, String BusinessRegNumber, String OffialAddress, 
+	public void doRegisterExporterwithBlankFields(String CompanyName, String BusinessRegNumber, String OffialAddress, 
 			String Tel, String Fax, String ContactEmail, String ContactPerson , String COOName, String COOEmail){
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
@@ -105,34 +105,24 @@ public class ExporterRegPage {
 		cooEmail.sendKeys(COOEmail);
 		addButton.click();
 
-		Alert javaScriptAlert = driver.switchTo().alert();
-
-		System.out.println(javaScriptAlert.getText());
-		javaScriptAlert.accept();		
-		String actualMsgText = actualSuccessMessage.getText();
-		String expectedMsgText = expectedSuccessMsgText;
-		Assert.assertTrue(actualMsgText.equalsIgnoreCase(expectedMsgText), "Exporter Registration Passed.");
-
-		LoginCredentialsPage loginCredPage = PageFactory.initElements(driver, LoginCredentialsPage.class);
-		return loginCredPage;
+		String expectedMsgText = Constants.FillMandatoryFieldsMessage;
+		
+		Alert javaScriptAlert = driver.switchTo().alert();		
+		Assert.assertTrue(javaScriptAlert.getText().equalsIgnoreCase(expectedMsgText), 
+				"Exporter Registration Passed while leaving mandetory fields empty");
+		javaScriptAlert.accept();			
 
 	}
 
 	public void getExpRegNoAttribute(){
-		String readOnly = expRegNo.getAttribute("readonly");
-		System.out.println("Read Only Text "+readOnly);
+
 		Assert.assertTrue(expRegNo.getAttribute("readonly").equals("true"),
 				"Editable");
-		
-	//	if(expRegNo.getAttribute("readonly").equals("true"))
-	//		System.out.println("Uneditable");
-
 	}
+	
 	public String getErrorMessage(){
-	//	System.out.println(EmailErrorMessage.getText());
-	//	System.out.println(	EmailErrorMessage.getText());
-	//	System.out.println(Constants.EmailErrorMessage);
-						Assert.assertTrue(EmailErrorMessage.getText().equals(Constants.EmailErrorMessage),
+
+		Assert.assertTrue(EmailErrorMessage.getText().equals(Constants.EmailErrorMessage),
 				"can register using same email");
 						
 		return EmailErrorMessage.getText();	

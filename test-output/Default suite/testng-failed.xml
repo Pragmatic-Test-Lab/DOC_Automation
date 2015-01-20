@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ptl.testcases.LogoutTest">
+      <class name="com.ptl.testcases.RegisterNewExporterMandatoryFieldTest">
         <methods>
+          <include name="MandatoryFieldTest" invocation-numbers="0 1"/>
           <include name="init"/>
-          <include name="loginTest" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.ptl.testcases.LogoutTest -->
+      </class> <!-- com.ptl.testcases.RegisterNewExporterMandatoryFieldTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

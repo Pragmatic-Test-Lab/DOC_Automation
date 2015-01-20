@@ -60,6 +60,7 @@ public class Constants {
 	// Exporter Login Credentials page
 	public static final String ExporterRegSuccessMessage = "//*[@id='messagesDiv']/div";
 	public static final String ExporterRegSuccessMessageText = "The exporter was successfully saved!";
+	public static final String FillMandatoryFieldsMessage = "Please fill all mandatory fields!";
 	public static final String ExpUsername = "//*[@id='userName']";
 	public static final String ExpPassword = "//*[@id='password']";
 	public static final String ExpRegistrationNumber = ""; //To be entered 

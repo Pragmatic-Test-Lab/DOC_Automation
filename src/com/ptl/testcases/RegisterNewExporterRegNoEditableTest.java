@@ -15,7 +15,7 @@ import com.ptl.DOC.pages.LoginPage;
 import com.ptl.DOC.pages.TopMenu;
 import com.ptl.util.TestUtil;
 
-public class doc2regeditabletest extends TestBase {
+public class RegisterNewExporterRegNoEditableTest extends TestBase {
 
 	@BeforeSuite
 	public void init() {
@@ -28,7 +28,7 @@ public class doc2regeditabletest extends TestBase {
 	}
 
 	@Test(dataProvider = "getActivateExporterData")
-	public void TestSuspendExporter(Hashtable<String, String> data) {
+	public void TestRegNoEditable(Hashtable<String, String> data) {
 		
 		if (!TestUtil.isTestCaseRunmodeYes("ExpReg", xls))
 			throw new SkipException("Skipping the Suspend Exporter test");
@@ -43,9 +43,9 @@ public class doc2regeditabletest extends TestBase {
 			LoginPage loginPage = PageFactory.initElements(driver,
 					LoginPage.class);
 			APPLICATION_LOGS.debug("logged in");
-			//homePage = loginPage.doLogin(data.get("Username"),
-					//data.get("Password"));
-			homePage = loginPage.doLogin("docdeptadmin","1qaz2wsx@");
+			homePage = loginPage.doLogin(data.get("Username"),
+					data.get("Password"));
+			//homePage = loginPage.doLogin("docdeptadmin","1qaz2wsx@");
 			APPLICATION_LOGS
 					.debug("Navigates Home page through the login page");
 
@@ -55,9 +55,10 @@ public class doc2regeditabletest extends TestBase {
 			topMenu = PageFactory.initElements(driver, TopMenu.class);
 			homePage = topMenu.gotoHomePage();
 			APPLICATION_LOGS.debug("Move to the Home Page using the top menu");
-
 		}
+		
 		ExporterRegPage expRegPage = homePage.gotoExporterRegPage();
+		//checks if Registration No is editable
 		expRegPage.getExpRegNoAttribute();
 
 	}

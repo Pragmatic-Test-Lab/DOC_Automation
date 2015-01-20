@@ -21,7 +21,7 @@ public class LoginCredentialsPage {
 	@FindBy(xpath = Constants.ExpRegistrationNumber)
 	WebElement expRegNumber;
 	@FindBy(xpath = Constants.SuccessMessage)
-	WebElement SuccessMessage2;
+	WebElement SuccessMessage;
 	@FindBy(xpath = Constants.RegNo)
 	WebElement RegNo;
 	public String expUsernameText = "";
@@ -75,7 +75,7 @@ public class LoginCredentialsPage {
 	}
 
 	public void getSuccessMessage() {
-		System.out.println(SuccessMessage2.getText());
+		System.out.println(SuccessMessage.getText());
 	}
 
 	public void getRegNo() {
