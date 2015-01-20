@@ -24,6 +24,8 @@ import com.ptl.util.TestUtil;
 
 public class CitizenLoginTest extends TestBase{
 	
+	CitizenHomePage homePage;
+	
 	@BeforeSuite
 	public void init(){
 		initConfiguration();
@@ -41,7 +43,7 @@ public class CitizenLoginTest extends TestBase{
 			throw new SkipException("Skipping the test");
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		CitizenHomePage homePage = null;
+		homePage = null;
 		
 		if(!isLoggedIn_CitizenApp){
 			APPLICATION_LOGS.debug("User is not logged in to the system, so navigating to the log in page");
@@ -66,36 +68,11 @@ public class CitizenLoginTest extends TestBase{
 	
 	public void ValidateExporterNameInTheTop(Hashtable<String, String> data){
 
-		
-		if(data != null){
-		if(!TestUtil.isTestCaseRunmodeYes("ApplyCOO", xls) || data.get("Runmode").equals("No"))
-			throw new SkipException("Skipping the test");
-		
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		CitizenHomePage homePage = null;
-		
-		if(!isLoggedIn_CitizenApp){
-			APPLICATION_LOGS.debug("User is not logged in to the system, so navigating to the log in page");
-			driver.get(CONFIG.getProperty("BASE_URL_CITIZEN_APP"));
-			LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-			APPLICATION_LOGS.debug("logged in");
-			homePage = loginPage.doCitizenLogin(data.get("Username"), data.get("Password"));
-			APPLICATION_LOGS.debug("Navigates Home page through the login page");
-			
-		} else {
-			APPLICATION_LOGS.debug("User already loged in, so do not want to go to the log in page");
-			topMenu = PageFactory.initElements(driver, TopMenu.class);
-			homePage = topMenu.gotoCitizenHomePage();
-			APPLICATION_LOGS.debug("Navigates Home page through the top menu");			
-		}
-		
 		RequestCopies reqCopiesPage = homePage.gotoRequestcopyPage();
-		String CompanyName = reqCopiesPage.getName();		
-
+		String CompanyName = reqCopiesPage.getName();	
 		
 		APPLICATION_LOGS.debug("Successfully applied for a COO");
-		}
-	
+			
 	}
 
 	

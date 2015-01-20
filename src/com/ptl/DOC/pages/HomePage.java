@@ -26,6 +26,10 @@ public class HomePage {
 	WebElement recordCostStatementAffidavitsLink;
 	@FindBy(xpath=Constants.RegisterExpName)
 	WebElement RegExpName;
+	
+	@FindBy(xpath=Constants.LogOutLink)
+	WebElement LogoutLink;
+	
 	public HomePage(WebDriver dr){
 		driver = dr;
 		
@@ -46,10 +50,7 @@ public class HomePage {
 		Assert.assertTrue(heading.equals(Constants.RegisterExpheading),
 				"Unsuccesful at proceeding to Register Exporter page");	
 		ExporterRegPage expRegPage = PageFactory.initElements(driver, ExporterRegPage.class);
-		return expRegPage;
-
-
-		
+		return expRegPage;		
 	}
 	
 	public ManageExportersPage gotoManageExportersPage(){
@@ -74,6 +75,12 @@ public class HomePage {
 		statReportLink.click();
 		StatisticReportPage statReportPage = PageFactory.initElements(driver, StatisticReportPage.class);
 		return statReportPage;
+	}
+
+	public LoginPage gotoLogout(){
+		LogoutLink.click();
+		LoginPage LoginPage = PageFactory.initElements(driver, LoginPage.class);
+		return LoginPage;
 	}
 	
 }
