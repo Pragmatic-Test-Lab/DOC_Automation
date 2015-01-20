@@ -3,26 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.ptl.testcases.GoExpregTest">
-=======
-      <class name="com.ptl.testcases.doc244duplicateemail">
->>>>>>> refs/remotes/origin/master
+      <class name="com.ptl.testcases.SaveNewCOOTest">
         <methods>
-<<<<<<< HEAD
-          <include name="ReadExporterRegistrationNumberTest"/>
-          <include name="RegNewExpTest" invocation-numbers="0 1"/>
-          <include name="RegisteredExporterLoginTest"/>
-=======
->>>>>>> refs/remotes/origin/master
           <include name="init"/>
-          <include name="RegNewExpTest" invocation-numbers="0 1"/>
+          <include name="VerifySavedNewCOO" invocation-numbers="0"/>
+          <include name="SaveCOOTest"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.ptl.testcases.GoExpregTest -->
-=======
-      </class> <!-- com.ptl.testcases.doc244duplicateemail -->
->>>>>>> refs/remotes/origin/master
+      </class> <!-- com.ptl.testcases.SaveNewCOOTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

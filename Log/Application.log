@@ -1,8 +1,6 @@
-20/01/2015 09:03:20 devpinoyLogger Configuration file initialized in New Exporter Registration Test
-20/01/2015 09:03:28 devpinoyLogger Web Driver initialized in New Exporter Registration Test
-20/01/2015 09:03:28 devpinoyLogger User is not logged in to the system, so navigating to the log in page
-20/01/2015 09:03:29 devpinoyLogger logged in
-20/01/2015 09:03:30 devpinoyLogger Navigates Home page through the login page
-20/01/2015 09:03:33 devpinoyLogger User already loged in, so do not want to go to the log in page
-20/01/2015 09:03:33 devpinoyLogger Navigates Home page through the top menu
-
+20/01/2015 13:11:30 devpinoyLogger Configuration file initialized in New Exporter Registration Test
+20/01/2015 13:11:35 devpinoyLogger Web Driver initialized in New Exporter Registration Test
+20/01/2015 13:11:35 devpinoyLogger User is not logged in to the system, so navigating to the log in page
+20/01/2015 13:11:36 devpinoyLogger logged in
+20/01/2015 13:11:39 devpinoyLogger Navigates Home page through the login page
+20/01/2015 13:12:06 devpinoyLogger Successfully saved COO application

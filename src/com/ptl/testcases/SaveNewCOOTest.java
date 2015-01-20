@@ -64,8 +64,9 @@ public class SaveNewCOOTest extends TestBase {
 						.debug("Navigates Home page through the top menu");
 			}
 
-			ApplyCOOPage applyCOOPage = homePage.gotoApplyCOOPage();
-
+			ApplyCOOPage applyCOOPage = homePage.gotoApplyCOOPage();	
+			
+			
 			applyCOOPage.ApplyNewCOO(data.get("FTA"),
 					data.get("ExporterAddress"), data.get("ModeofTransport"),
 					data.get("VesselNo"), data.get("PortofLoading"),
@@ -89,9 +90,9 @@ public class SaveNewCOOTest extends TestBase {
 		APPLICATION_LOGS.debug("Successfully saved COO application");
 		}
 	}
-	
-	@Test(dependsOnMethods="SaveCOOTest")
-	public void VerifySavedNewCOO(){
+
+	@Test(dependsOnMethods="SaveCOOTest", dataProvider = "getCOOApplicationData")
+	public void VerifySavedNewCOO(Hashtable<String, String> data){
 		CitizenHomePage citihomePage = null;
 		
 		citizenTopMenu = PageFactory.initElements(driver,
@@ -100,7 +101,19 @@ public class SaveNewCOOTest extends TestBase {
 		citihomePage = citizenTopMenu.gotoCitizenHomePage();
 		ApplyCOOPage applySavedCOOPage = citihomePage.gotoApplyCOOPage();
 		
-		applySavedCOOPage.retrieveSavedApplication(TempRefNumber);	
+		applySavedCOOPage.retrieveSavedApplication(TempRefNumber);
+
+		
+		applySavedCOOPage.CompareCOOApplicationData(data.get("FTA"),
+				data.get("ExporterAddress"), data.get("ModeofTransport"),
+				data.get("VesselNo"), data.get("PortofLoading"),
+				data.get("PortofDischarging"), data.get("cosigneeeName"),
+				data.get("cosigneeeAddress"), data.get("cosigneeeCountry"),
+				data.get("Declaration"), data.get("CUSDEC"),
+				data.get("OfficeCode"), data.get("VoyageCode"),
+				data.get("DepartureDate"), data.get("DeclaredCountry"),
+				data.get("NoOfCopies"), data.get("CollectionMethod"),
+				data.get("PostalAddress"));
 		
 	}
 

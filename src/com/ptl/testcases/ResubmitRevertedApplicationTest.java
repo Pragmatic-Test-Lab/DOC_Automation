@@ -77,7 +77,7 @@ public class ResubmitRevertedApplicationTest extends TestBase {
 	public void changeApplicationDataTest(Hashtable<String, String> data){		
 
 		//changing loaded application data
-		applyCOOPage.ApplyNewCOO(data.get("FTA"),
+		applyCOOPage.ChangeCOOApplicationData(data.get("FTA"),
 				data.get("ExporterAddress"), data.get("ModeofTransport"),
 				data.get("VesselNo"), data.get("PortofLoading"),
 				data.get("PortofDischarging"), data.get("cosigneeeName"),

@@ -9,11 +9,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.ClickAction;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import com.ptl.util.Constants;
+import com.thoughtworks.selenium.webdriven.commands.Click;
 
 public class ApplyCOOPage {
 
@@ -103,7 +106,7 @@ public class ApplyCOOPage {
 	WebElement SaveMessage;
 	@FindBy(xpath = Constants.ResubmitMessage)
 	WebElement ResubmitMessage;
-	@FindBy(xpath=Constants.Status1)
+	@FindBy(xpath = Constants.Status1)
 	WebElement status1;
 	List<WebElement> noOfColumns;
 	List<String> monthList = Arrays.asList("January", "February", "March",
@@ -232,18 +235,19 @@ public class ApplyCOOPage {
 		}
 	}
 
-	public void retrieveSavedApplication(String tempRefNum){
-		
+	public void retrieveSavedApplication(String tempRefNum) {
+
 		TempRefNumber.sendKeys(tempRefNum);
 		FirstResult.click();
-		
+
 	}
 
 	public void ResubmitCOOApplication() {
 		Submit.click();
 
 		Assert.assertTrue(
-				ResubmitMessage.getText().equals(Constants.ResubmitSuccessfullMessage),
+				ResubmitMessage.getText().equals(
+						Constants.ResubmitSuccessfullMessage),
 				"COO Resubmition Failed.");
 
 	}
@@ -301,20 +305,123 @@ public class ApplyCOOPage {
 			}
 		}
 	}
-	public void doReapplyCOO(String Status){
+
+	public void doReapplyCOO(String Status) {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		status1.click();
-		
+
 	}
 
-	
-	
-	public void AddNewProduct(String hsCode,String productMark, String productNo, 
-			String criterion, String weight, String unit,String invoiceNo, String fob, 
-			String invoiceDate){
-		
-		
-		
+	public void AddNewProduct(String hsCode, String productMark,
+			String productNo, String criterion, String weight, String unit,
+			String invoiceNo, String fob, String invoiceDate) {
+
 	}
+
+	public void ChangeCOOApplicationData(String fta, String exporterAddress,
+			String modeOfTransport, String vesselNo, String portOfLoading,
+			String portOfDischarging, String CosigneeeName,
+			String CosigneeAddress, String CosigneeCountry, String declaration,
+			String CUSDECCode, String officeCode, String voyageCode,
+			String departureDate, String declaredCountry, String noOfCopies,
+			String collectionMethod, String postalAddress) {
+
+		FTA.sendKeys(fta);
+		ExporterAddress
+				.sendKeys(Keys.chord(Keys.CONTROL, "a"), exporterAddress);
+		ModeofTransport.sendKeys(modeOfTransport);
+		VesselNo.sendKeys(Keys.chord(Keys.CONTROL, "a"), vesselNo);
+		PortOfLoading.sendKeys(portOfLoading);
+		PortOfDischarging.sendKeys(Keys.chord(Keys.CONTROL, "a"),
+				portOfDischarging);
+		cosigneeeName.sendKeys(Keys.chord(Keys.CONTROL, "a"), CosigneeeName);
+		cosigneeeAddress.sendKeys(Keys.chord(Keys.CONTROL, "a"),
+				CosigneeAddress);
+		cosigneeeCountry.sendKeys(CosigneeCountry);
+		Declaration.sendKeys(Keys.chord(Keys.CONTROL, "a"), declaration);
+		CUSDEC.sendKeys(Keys.chord(Keys.CONTROL, "a"), CUSDECCode);
+		OfficeCode.sendKeys(Keys.chord(Keys.CONTROL, "a"), officeCode);
+		VoyageCode.sendKeys(Keys.chord(Keys.CONTROL, "a"), voyageCode);
+
+		DepartureDateField.click();
+		try {
+			pickDate(departureDate);
+		} catch (InterruptedException e) {
+		}
+
+		DeclaredCountry.sendKeys(declaredCountry);
+		NoOfCopies.sendKeys(Keys.chord(Keys.CONTROL, "a"), noOfCopies);
+		CollectionMethod.sendKeys(collectionMethod);
+
+		if (!collectionMethod.equalsIgnoreCase("Post"))
+			PostalAddress
+					.sendKeys(Keys.chord(Keys.CONTROL, "a"), postalAddress);
+	}
+
+	public void CompareCOOApplicationData(String fta, String exporterAddress,
+			String modeOfTransport, String vesselNo, String portOfLoading,
+			String portOfDischarging, String CosigneeeName,
+			String CosigneeAddress, String CosigneeCountry, String declaration,
+			String CUSDECCode, String officeCode, String voyageCode,
+			String departureDate, String declaredCountry, String noOfCopies,
+			String collectionMethod, String postalAddress) {
+		
+		String selectedFTA = (new Select(FTA)).getFirstSelectedOption().getText();
+		Assert.assertTrue(selectedFTA.equals(fta),
+				"Retrived COO Application FTA is different");
+
+		Assert.assertTrue(ExporterAddress.getAttribute("value").equals(exporterAddress),
+				"Retrived COO Application Exporter Address is different");
+		
+		String selectedMOT = new Select(ModeofTransport).getFirstSelectedOption().getText();
+		Assert.assertTrue(selectedMOT.equals(modeOfTransport),
+				"Retrived COO Application Mode of Transport is different");
+
+		Assert.assertTrue(VesselNo.getAttribute("value").equals(vesselNo),
+				"Retrived COO Application Vessel No is different");
+
+		String selectedPOL = new Select(PortOfLoading).getFirstSelectedOption().getText();
+		Assert.assertTrue(selectedPOL.equals(portOfLoading),
+				"Retrived COO Application Port Of Loading is different");
+
+		Assert.assertTrue(
+				PortOfDischarging.getAttribute("value").equals(portOfDischarging),
+				"Retrived COO Application Port Of Discharging is different");
+
+		Assert.assertTrue(cosigneeeName.getAttribute("value").equals(CosigneeeName),
+				"Retrived COO Application Cosigneee Name is different");
+
+		Assert.assertTrue(cosigneeeAddress.getAttribute("value").equals(CosigneeAddress),
+				"Retrived COO Application Cosigneee Address is different");
+
+		String cosigneeCountry = new Select(cosigneeeCountry).getFirstSelectedOption().getText();
+		Assert.assertTrue(cosigneeCountry.equals(CosigneeCountry),
+				"Retrived COO Application Cosigneee Country is different");
+
+		Assert.assertTrue(Declaration.getAttribute("value").equals(declaration),
+				"Retrived COO Application Declaration is different");
+
+		Assert.assertTrue(CUSDEC.getAttribute("value").equals(CUSDECCode),
+				"Retrived COO Application CUSDEC Code is different");
+
+		Assert.assertTrue(OfficeCode.getAttribute("value").equals(officeCode),
+				"Retrived COO Application OfficeCode is different");
+
+		Assert.assertTrue(VoyageCode.getAttribute("value").equals(voyageCode),
+				"Retrived COO Application Voyage Code is different");
+
+		String DecCountry = new Select(DeclaredCountry).getFirstSelectedOption().getText();
+		Assert.assertTrue(DecCountry.equals(declaredCountry),
+				"Retrived COO Application Declared Country is different");
+
+		Assert.assertTrue(NoOfCopies.getAttribute("value").equals(noOfCopies),
+				"Retrived COO Application No Of Copies is different");
+
+		String ColMethod = new Select(CollectionMethod).getFirstSelectedOption().getText();
+		Assert.assertTrue(ColMethod.equals(collectionMethod),
+				"Retrived COO Application Collection Method is different");
+
+	}
+
 }
