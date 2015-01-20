@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ptl.testcases.CostStatementCreateNewTest">
+      <class name="com.ptl.testcases.GoExpregTest">
         <methods>
-          <include name="CreateNewCostStatementTest" invocation-numbers="0"/>
+          <include name="ReadExporterRegistrationNumberTest"/>
+          <include name="RegNewExpTest"/>
+          <include name="RegisteredExporterLoginTest"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.ptl.testcases.CostStatementCreateNewTest -->
+      </class> <!-- com.ptl.testcases.GoExpregTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

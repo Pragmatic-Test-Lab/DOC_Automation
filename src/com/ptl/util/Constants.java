@@ -224,7 +224,7 @@ public class Constants {
 	public static final double AdditionalCopyFee = 500.00;
 	public static final double PostalFee = 10.00;	
 	public static final String PayButton = "//*[@id='pay_id']";
-	public static final String ConfirmButton = "///*[@id='es-content']/div[5]/div[2]/div/form/button";
+	public static final String ConfirmButton = "//button[@type='submit']";
 	public static final String COOPayment_PageHeading = "//*[@id='logo']/img";
 	public static final String COOPaymentGatewayMessage = "Lanka Government Payment Service";
 	public static final String SaveMessage = "//*[@id='messagesDiv']/div/ul/li";
