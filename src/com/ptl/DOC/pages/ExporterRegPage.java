@@ -111,7 +111,7 @@ public class ExporterRegPage {
 		javaScriptAlert.accept();		
 		String actualMsgText = actualSuccessMessage.getText();
 		String expectedMsgText = expectedSuccessMsgText;
-		Assert.assertTrue(actualMsgText.equalsIgnoreCase(expectedMsgText), "Exporter Registration Fail");
+		Assert.assertTrue(actualMsgText.equalsIgnoreCase(expectedMsgText), "Exporter Registration Passed.");
 
 		LoginCredentialsPage loginCredPage = PageFactory.initElements(driver, LoginCredentialsPage.class);
 		return loginCredPage;

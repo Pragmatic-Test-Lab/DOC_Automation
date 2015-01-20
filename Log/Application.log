@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 20/01/2015 09:18:09 devpinoyLogger Configuration file initialized in New Exporter Registration Test
 20/01/2015 09:18:17 devpinoyLogger Web Driver initialized in New Exporter Registration Test
 20/01/2015 09:18:17 devpinoyLogger User is not logged in to the system, so navigating to the log in page
 20/01/2015 09:18:18 devpinoyLogger logged in
 20/01/2015 09:18:19 devpinoyLogger Navigates Home page through the login page
 20/01/2015 09:18:21 devpinoyLogger Successfully registered a new exporter
+=======
+20/01/2015 09:03:20 devpinoyLogger Configuration file initialized in New Exporter Registration Test
+20/01/2015 09:03:28 devpinoyLogger Web Driver initialized in New Exporter Registration Test
+20/01/2015 09:03:28 devpinoyLogger User is not logged in to the system, so navigating to the log in page
+20/01/2015 09:03:29 devpinoyLogger logged in
+20/01/2015 09:03:30 devpinoyLogger Navigates Home page through the login page
+20/01/2015 09:03:33 devpinoyLogger User already loged in, so do not want to go to the log in page
+20/01/2015 09:03:33 devpinoyLogger Navigates Home page through the top menu
+
+>>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
