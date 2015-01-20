@@ -3,34 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.ptl.testcases.EditRequestCopiesTest">
-=======
-<<<<<<< HEAD
-      <class name="com.ptl.testcases.GoExpregTest">
-=======
-      <class name="com.ptl.testcases.doc244duplicateemail">
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
+      <class name="com.ptl.testcases.printcancelled">
         <methods>
-<<<<<<< HEAD
-          <include name="ReadExporterRegistrationNumberTest"/>
-          <include name="RegNewExpTest" invocation-numbers="0 1"/>
-          <include name="RegisteredExporterLoginTest"/>
-=======
->>>>>>> refs/remotes/origin/master
           <include name="init"/>
-          <include name="EditReqCopies" invocation-numbers="1"/>
+          <include name="TestSuspendExporter" invocation-numbers="0"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.ptl.testcases.EditRequestCopiesTest -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.ptl.testcases.GoExpregTest -->
-=======
-      </class> <!-- com.ptl.testcases.doc244duplicateemail -->
->>>>>>> refs/remotes/origin/master
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
+      </class> <!-- com.ptl.testcases.printcancelled -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

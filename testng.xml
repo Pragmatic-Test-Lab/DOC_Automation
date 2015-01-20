@@ -128,7 +128,16 @@
         <class name="com.ptl.testcases.LogoutTest"></class>  
     </classes>
 </test>
-
+<test name="COO in Printed status can be Cancelled">
+    <classes>
+        <class name="com.ptl.testcases.printcancelled"></class>  
+    </classes>
+</test>
+<test name="COO in Reprinted status can be Cancelled">
+    <classes>
+        <class name="com.ptl.testcases.reprintcancelled"></class>  
+    </classes>
+</test>
 </suite>
 
 
