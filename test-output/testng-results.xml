@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="2" total="4" passed="2">
-=======
-<testng-results skipped="0" failed="2" total="2" passed="0">
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
+<testng-results skipped="2" failed="2" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="24814" started-at="2015-01-20T03:59:05Z" finished-at="2015-01-20T03:59:29Z">
-=======
-  <suite name="Default suite" duration-ms="8483" started-at="2015-01-20T03:33:28Z" finished-at="2015-01-20T03:33:37Z">
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
+  <suite name="Default suite" duration-ms="7491" started-at="2015-01-20T04:20:13Z" finished-at="2015-01-20T04:20:20Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="24814" started-at="2015-01-20T03:59:05Z" finished-at="2015-01-20T03:59:29Z">
+    <test name="Default test" duration-ms="7491" started-at="2015-01-20T04:20:13Z" finished-at="2015-01-20T04:20:20Z">
       <class name="com.ptl.testcases.GoExpregTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.ptl.testcases.GoExpregTest@3160e498]" name="init" is-config="true" duration-ms="4720" started-at="2015-01-20T09:29:00Z" finished-at="2015-01-20T09:29:05Z">
-=======
-    <test name="Default test" duration-ms="8483" started-at="2015-01-20T03:33:28Z" finished-at="2015-01-20T03:33:37Z">
-      <class name="com.ptl.testcases.doc244duplicateemail">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.ptl.testcases.doc244duplicateemail@34fccd15]" name="init" is-config="true" duration-ms="8647" started-at="2015-01-20T09:03:20Z" finished-at="2015-01-20T09:03:28Z">
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
+        <test-method status="PASS" signature="init()[pri:0, instance:com.ptl.testcases.GoExpregTest@4aba6039]" name="init" is-config="true" duration-ms="5728" started-at="2015-01-20T09:50:07Z" finished-at="2015-01-20T09:50:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="RegNewExpTest(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.GoExpregTest@3160e498]" name="RegNewExpTest" duration-ms="3506" started-at="2015-01-20T09:29:05Z" data-provider="getExporterRegData" finished-at="2015-01-20T09:29:08Z">
-=======
-        <test-method status="FAIL" signature="RegNewExpTest(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.doc244duplicateemail@34fccd15]" name="RegNewExpTest" duration-ms="4820" started-at="2015-01-20T09:03:28Z" data-provider="getExporterRegData" finished-at="2015-01-20T09:03:33Z">
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
+        <test-method status="FAIL" signature="RegNewExpTest(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.GoExpregTest@4aba6039]" name="RegNewExpTest" duration-ms="6429" started-at="2015-01-20T09:50:13Z" data-provider="getExporterRegData" finished-at="2015-01-20T09:50:19Z">
           <params>
             <param index="0">
               <value>
@@ -37,142 +19,19 @@
               </value>
             </param>
           </params>
-<<<<<<< HEAD
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegNewExpTest -->
-        <test-method status="PASS" signature="RegNewExpTest(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.GoExpregTest@3160e498]" name="RegNewExpTest" duration-ms="1097" started-at="2015-01-20T09:29:08Z" data-provider="getExporterRegData" finished-at="2015-01-20T09:29:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{COO Mobile=0723994254, Contact Person=Harry Jaawreerten, Official Address=107, New kendy rd, Mabaso, Username=docdeptadmin, Fax=0192699459, Runmode=yes, Tel=0112999922, Company Name=VPELintar, Password=1qaz2wsx@, COO Email=hay2j29@gmail.com, COO Name=Harry erereeerria, Business RegNo=LSA95334, Contact Email=hrr9332@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegNewExpTest -->
-        <test-method status="FAIL" signature="ReadExporterRegistrationNumberTest()[pri:0, instance:com.ptl.testcases.GoExpregTest@3160e498]" name="ReadExporterRegistrationNumberTest" duration-ms="10108" started-at="2015-01-20T09:29:09Z" depends-on-methods="com.ptl.testcases.GoExpregTest.RegNewExpTest" finished-at="2015-01-20T09:29:19Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":""}
-Command duration or timeout: 10.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
 System info: host: 'GMAX-PC', ip: '192.168.1.43', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Session ID: 3455487d-a733-4216-8a07-6891c00e05c2
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.1}]]]>
-=======
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Exporter Registration Fail expected [true] but found [false]]]>
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-<<<<<<< HEAD
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":""}
-Command duration or timeout: 10.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
 System info: host: 'GMAX-PC', ip: '192.168.1.43', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Session ID: 3455487d-a733-4216-8a07-6891c00e05c2
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.1}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy6.getAttribute(Unknown Source)
-	at com.ptl.DOC.pages.LoginCredentialsPage.ReadExporterRegistrationNumber(LoginCredentialsPage.java:66)
-	at com.ptl.testcases.GoExpregTest.ReadExporterRegistrationNumberTest(GoExpregTest.java:62)
-=======
-              <![CDATA[java.lang.AssertionError: Exporter Registration Fail expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.ptl.DOC.pages.ExporterRegPage.doRegisterNewExporter(ExporterRegPage.java:82)
-	at com.ptl.testcases.doc244duplicateemail.RegNewExpTest(doc244duplicateemail.java:54)
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":""}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'GMAX-PC', ip: '192.168.1.43', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Gayashan/AppData/Local/Temp/anonymous1132221255003185webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Gayashan/AppData/Local/Temp/anonymous1132221255003185webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
-]]>
-            </full-stacktrace>
-<<<<<<< HEAD
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-=======
-          </exception> <!-- java.lang.AssertionError -->
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- ReadExporterRegistrationNumberTest -->
-        <test-method status="FAIL" signature="RegisteredExporterLoginTest()[pri:0, instance:com.ptl.testcases.GoExpregTest@3160e498]" name="RegisteredExporterLoginTest" duration-ms="10041" started-at="2015-01-20T09:29:19Z" depends-on-methods="com.ptl.testcases.GoExpregTest.RegNewExpTest" finished-at="2015-01-20T09:29:29Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id='userName']"}
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'GMAX-PC', ip: '192.168.1.43', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Session ID: 3455487d-a733-4216-8a07-6891c00e05c2
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.1}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='userName']"}
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'GMAX-PC', ip: '192.168.1.43', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Session ID: 3455487d-a733-4216-8a07-6891c00e05c2
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.1}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
@@ -180,8 +39,8 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
 	at com.sun.proxy.$Proxy6.getText(Unknown Source)
-	at com.ptl.DOC.pages.LoginCredentialsPage.getAutoGenExpUsername(LoginCredentialsPage.java:35)
-	at com.ptl.testcases.GoExpregTest.RegisteredExporterLoginTest(GoExpregTest.java:69)
+	at com.ptl.DOC.pages.HomePage.gotoExporterRegPage2(HomePage.java:44)
+	at com.ptl.testcases.GoExpregTest.RegNewExpTest(GoExpregTest.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -206,23 +65,42 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='userName']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'GMAX-PC', ip: '192.168.1.43', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Gayashan/AppData/Local/Temp/anonymous1132221255003185webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Gayashan/AppData/Local/Temp/anonymous1132221255003185webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 47 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisteredExporterLoginTest -->
-      </class> <!-- com.ptl.testcases.GoExpregTest -->
-=======
         </test-method> <!-- RegNewExpTest -->
-        <test-method status="FAIL" signature="RegNewExpTest(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.doc244duplicateemail@34fccd15]" name="RegNewExpTest" duration-ms="3614" started-at="2015-01-20T09:03:33Z" data-provider="getExporterRegData" finished-at="2015-01-20T09:03:37Z">
+        <test-method status="FAIL" signature="RegNewExpTest(java.util.Hashtable)[pri:0, instance:com.ptl.testcases.GoExpregTest@4aba6039]" name="RegNewExpTest" duration-ms="1046" started-at="2015-01-20T09:50:19Z" data-provider="getExporterRegData" finished-at="2015-01-20T09:50:20Z">
           <params>
             <param index="0">
               <value>
@@ -230,17 +108,22 @@ Driver info: driver.version: unknown
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[Exporter Registration Fail expected [true] but found [false]]]>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'GMAX-PC', ip: '192.168.1.43', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Exporter Registration Fail expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.ptl.DOC.pages.ExporterRegPage.doRegisterNewExporter(ExporterRegPage.java:82)
-	at com.ptl.testcases.doc244duplicateemail.RegNewExpTest(doc244duplicateemail.java:54)
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'GMAX-PC', ip: '192.168.1.43', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.firefox.FirefoxDriver.access$0(FirefoxDriver.java:1)
+	at org.openqa.selenium.firefox.FirefoxDriver$1$1.implicitlyWait(FirefoxDriver.java:219)
+	at com.ptl.testcases.GoExpregTest.RegNewExpTest(GoExpregTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -265,14 +148,50 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 27 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 41 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegNewExpTest -->
-      </class> <!-- com.ptl.testcases.doc244duplicateemail -->
->>>>>>> branch 'master' of https://github.com/Pragmatic-Test-Lab/DOC_Automation.git
+        <test-method status="SKIP" signature="ReadExporterRegistrationNumberTest()[pri:0, instance:com.ptl.testcases.GoExpregTest@4aba6039]" name="ReadExporterRegistrationNumberTest" duration-ms="0" started-at="2015-01-20T09:50:20Z" depends-on-methods="com.ptl.testcases.GoExpregTest.RegNewExpTest" finished-at="2015-01-20T09:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadExporterRegistrationNumberTest -->
+        <test-method status="SKIP" signature="RegisteredExporterLoginTest()[pri:0, instance:com.ptl.testcases.GoExpregTest@4aba6039]" name="RegisteredExporterLoginTest" duration-ms="0" started-at="2015-01-20T09:50:20Z" depends-on-methods="com.ptl.testcases.GoExpregTest.RegNewExpTest" finished-at="2015-01-20T09:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredExporterLoginTest -->
+      </class> <!-- com.ptl.testcases.GoExpregTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
