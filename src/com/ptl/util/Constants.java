@@ -16,6 +16,9 @@ public class Constants {
 	public static final String password = "//input[@name='password']";
 	public static final String login = "//*[@id='sessionInvalidate_authorizationAction']";
 	public static final String LogOut = "//a[@href='logout']";
+	public static final String LoginPageHeader = "//*[@id='es-content']/div[1]/div[1]";
+	public static final String LoginPageTitle = "Welcome to the eService provided by Department of Commerce";
+	
 
 	// Home Page Links
 	public static final String ExporterRegistration = "//*[@id='showExporterRegistration']";
@@ -57,6 +60,7 @@ public class Constants {
 	// Exporter Login Credentials page
 	public static final String ExporterRegSuccessMessage = "//*[@id='messagesDiv']/div";
 	public static final String ExporterRegSuccessMessageText = "The exporter was successfully saved!";
+	public static final String FillMandatoryFieldsMessage = "Please fill all mandatory fields!";
 	public static final String ExpUsername = "//*[@id='userName']";
 	public static final String ExpPassword = "//*[@id='password']";
 	public static final String ExpRegistrationNumber = ""; //To be entered 

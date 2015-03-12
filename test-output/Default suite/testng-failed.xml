@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ptl.testcases.resetbuttontest">
+      <class name="com.ptl.testcases.RegisterNewExporterMandatoryFieldTest">
         <methods>
-          <include name="ResetButton" invocation-numbers="1"/>
+          <include name="MandatoryFieldTest" invocation-numbers="0 1"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.ptl.testcases.resetbuttontest -->
+      </class> <!-- com.ptl.testcases.RegisterNewExporterMandatoryFieldTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -4,13 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.ptl.testcases.TestBase;
 import com.ptl.util.Constants;
 
 public class CitizenLoginPage {
-	
-	
+
 	public WebDriver driver;
 	@FindBy(xpath = Constants.username)
 	public WebElement username;
@@ -20,6 +20,9 @@ public class CitizenLoginPage {
 	public WebElement login;
 	@FindBy(xpath = Constants.LogOut)
 	public WebElement logOut;
+
+	@FindBy(xpath = Constants.LoginPageHeader)
+	WebElement LoginPageHeader;
 
 	public CitizenLoginPage(WebDriver dr) {
 		driver = dr;
@@ -41,6 +44,13 @@ public class CitizenLoginPage {
 			TestBase.isLoggedIn_CitizenApp = false;
 		}
 		return homePage;
+	}
+
+	public void VerifyIsLoginPage() {
+
+		Assert.assertTrue(
+				LoginPageHeader.getText().equals(Constants.LoginPageTitle),
+				"Did not arrived at Login Page.");
 	}
 
 }

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.ptl.DOC.pages.ApplyCOOPage;
 import com.ptl.DOC.pages.RequestCopies;
@@ -23,6 +24,9 @@ public class CitizenHomePage {
 	WebElement COOREApplicationLink;
 	@FindBy(xpath=Constants.LogOutLink)
 	WebElement LogoutLink;
+
+	
+	
 	public CitizenHomePage(WebDriver dr){
 		driver = dr;		
 	}
@@ -38,11 +42,10 @@ public class CitizenHomePage {
 		return applyCOOPage;
 	}
 	
-	public ApplyCOOPage gotoLogout(){
+	public CitizenLoginPage gotoLogout(){
 		LogoutLink.click();
-		ApplyCOOPage Logout = PageFactory.initElements(driver, ApplyCOOPage.class);
-		System.out.println("Logout done");
-		return Logout;
+		CitizenLoginPage LoginPage = PageFactory.initElements(driver, CitizenLoginPage.class);
+		return LoginPage;
 	}
 	
 	public RequestCopies gotoRequestcopyPage(){

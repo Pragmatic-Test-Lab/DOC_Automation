@@ -1,143 +1,152 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Department of Commerce">
 
-<listeners>
-    <listener class-name="listener.TestsListenerAdapter" />
-</listeners>
-<!-- <test name="User Login Test">
-    <classes>
-        <class name="com.ptl.testcases.LoginTest" ></class>  
-    </classes>
-</test> -->
+	<listeners>
+		<listener class-name="listener.TestsListenerAdapter" />
+	</listeners>
+	<!-- <test name="User Login Test"> <classes> <class name="com.ptl.testcases.LoginTest" 
+		></class> </classes> </test> -->
 
-<test name="Exporter Activate Test">
-    <classes>
-        <class name="com.ptl.testcases.ExporterActivateTest" ></class>  
-    </classes>
-</test>
-<test name="Create New Affidavit Test">
-    <classes>
-        <class name="com.ptl.testcases.CreateNewAffidavitTest" ></class>  
-    </classes>
-</test>
-<test name="Search for COO Test">
-    <classes>
-        <class name="com.ptl.testcases.ManageCOOSearchTest"></class>  
-    </classes>
-</test>
-<test name="COO Status Change Test">
-    <classes>
-        <class name="com.ptl.testcases.CheckedCOOActionsTest"></class>  
-        <class name="com.ptl.testcases.CancelCOOTest"></class>  
-    </classes>
-</test>
-<test name="Print COO Test">
-    <classes>
-        <class name="com.ptl.testcases.VerifyCOOPrintWithStatus"></class>  
-        <class name="com.ptl.testcases.PrintCOOTest"></class>  
-    </classes>
-</test>
-<test name="Genarate Statistics Report Test">
-    <classes>
-        <class name="com.ptl.testcases.StatisticReportPageSearchTest"></class>  
-    </classes>
-</test>
-<test name="Exporter Apply new COO Test">
-    <classes>
-        <class name="com.ptl.testcases.ExporterApplyforCOOTest"></class>  
-    </classes>
-</test>
-<test name="Exporter Apply new COO Test">
-    <classes>
-        <class name="com.ptl.testcases.ExporterApplyforCOOTest"></class>  
-    </classes>
-</test>
-<test name="Exporter Save and Retrieve new COO Test">
-    <classes>
-        <class name="com.ptl.testcases.SaveNewCOOTest"></class>  
-    </classes>
-</test>
-<test name="Exporter Resubmit Reverted COO Test">
-    <classes>
-        <class name="com.ptl.testcases.ResubmitRevertedApplicationTest"></class>  
-    </classes>
-</test>
-<test name="Exporter registration number field is not editable">
-    <classes>
-        <class name="com.ptl.testcases.doc2regeditabletest"></class>  
-    </classes>
-</test>
-<test name="appropriate error message given if user neglect mandatory fields.">
-    <classes>
-        <class name="com.ptl.testcases.doc3mandatoryerrormsg"></class>  
-    </classes>
-</test>
-<test name="user cannot enter a duplicate email">
-    <classes>
-        <class name="com.ptl.testcases.doc244duplicateemail"></class>  
-    </classes>
-</test><test name="only approved exporters will be entered into the system">
-    <classes>
-        <class name="com.ptl.testcases.newexportertest"></class>  
-    </classes>
-</test><test name="department user cannot add duplicate exporters to the system">
-    <classes>
-        <class name="com.ptl.testcases.doc244duplicateemail"></class>  
-    </classes>
-</test><test name=" format of the auto generated Exporter Registration Number">
-    <classes>
-        <class name="com.ptl.testcases.checkexpregno"></class>  
-    </classes>
-</test><test name="exporter ‘Registration No’ ,Receipt No & ‘Save’ button displayed only for department user">
-    <classes>
-        <class name="com.ptl.testcases.RequestCopiesTest"></class>  
-    </classes>
-</test>
-<test name="Exporter Registration No,Receipt No, not displayed to the exporter.">
-    <classes>
-        <class name="com.ptl.testcases.RequestCopiesTest"></class>  
-    </classes>
-</test>
-<test name=" Exporter can request copies of COO by entering the relevant COO Reference number">
-    <classes>
-        <class name="com.ptl.testcases.reqcopiesdeptadmin"></class>  
-    </classes>
-</test>
-<test name="Department user can request copies of COO using exporter’s registration no & COO Reference">
-    <classes>
-        <class name="com.ptl.testcases.reqcopiesdeptadmin"></class>  
-    </classes>
-</test>
-<test name="All data fields will be cleared when clicked on the ‘Reset’ button">
-    <classes>
-        <class name="com.ptl.testcases.resetbuttontest"></class>  
-    </classes>
-</test>
-<test name="department user is able to select exporter registration number">
-    <classes>
-        <class name="com.ptl.testcases.reqcopiesdeptadmin"></class>  
-    </classes>
-</test>
-<test name="department user can request for COO copies of a selected exporter">
-    <classes>
-        <class name="com.ptl.testcases.reqcopiesdeptadmin"></class>  
-    </classes>
-</test>
-<test name="user can logout from the system">
-    <classes>
-        <class name="com.ptl.testcases.LogoutTest"></class>  
-    </classes>
-</test>
-<test name="COO in Printed status can be Cancelled">
-    <classes>
-        <class name="com.ptl.testcases.printcancelled"></class>  
-    </classes>
-</test>
-<test name="COO in Reprinted status can be Cancelled">
-    <classes>
-        <class name="com.ptl.testcases.reprintcancelled"></class>  
-    </classes>
-</test>
+	<<<<<<< HEAD
+	<test name="Exporter Activate Test">
+		<classes>
+			<class name="com.ptl.testcases.ExporterActivateTest"></class>
+		</classes>
+	</test>
+	<test name="Create New Affidavit Test">
+		<classes>
+			<class name="com.ptl.testcases.CreateNewAffidavitTest"></class>
+		</classes>
+	</test>
+	<test name="Search for COO Test">
+		<classes>
+			<class name="com.ptl.testcases.ManageCOOSearchTest"></class>
+		</classes>
+	</test>
+	<test name="COO Status Change Test">
+		<classes>
+			<class name="com.ptl.testcases.CheckedCOOActionsTest"></class>
+			<class name="com.ptl.testcases.CancelCOOTest"></class>
+		</classes>
+	</test>
+	<test name="Print COO Test">
+		<classes>
+			<class name="com.ptl.testcases.VerifyCOOPrintWithStatus"></class>
+			<class name="com.ptl.testcases.PrintCOOTest"></class>
+		</classes>
+	</test>
+	<test name="Genarate Statistics Report Test">
+		<classes>
+			<class name="com.ptl.testcases.StatisticReportPageSearchTest"></class>
+		</classes>
+	</test>
+	<test name="Exporter Apply new COO Test">
+		<classes>
+			<class name="com.ptl.testcases.ExporterApplyforCOOTest"></class>
+		</classes>
+	</test>
+	<test name="Exporter Apply new COO Test">
+		<classes>
+			<class name="com.ptl.testcases.ExporterApplyforCOOTest"></class>
+		</classes>
+	</test>
+	<test name="Exporter Save and Retrieve new COO Test">
+		<classes>
+			<class name="com.ptl.testcases.SaveNewCOOTest"></class>
+		</classes>
+	</test>
+	<test name="Exporter Resubmit Reverted COO Test">
+		<classes>
+			<class name="com.ptl.testcases.ResubmitRevertedApplicationTest"></class>
+		</classes>
+	</test>
+	<test name="Exporter registration number field is not editable">
+		<classes>
+			<class name="com.ptl.testcases.doc2regeditabletest"></class>
+		</classes>
+	</test>
+	<test
+		name="appropriate error message given if user neglect mandatory fields.">
+		<classes>
+			<class name="com.ptl.testcases.doc3mandatoryerrormsg"></class>
+		</classes>
+	</test>
+	<test name="user cannot enter a duplicate email">
+		<classes>
+			<class name="com.ptl.testcases.doc244duplicateemail"></class>
+		</classes>
+	</test>
+	<test name="only approved exporters will be entered into the system">
+		<classes>
+			<class name="com.ptl.testcases.newexportertest"></class>
+		</classes>
+	</test>
+	<test name="department user cannot add duplicate exporters to the system">
+		<classes>
+			<class name="com.ptl.testcases.doc244duplicateemail"></class>
+		</classes>
+	</test>
+	<test name=" format of the auto generated Exporter Registration Number">
+		<classes>
+			<class name="com.ptl.testcases.checkexpregno"></class>
+		</classes>
+	</test>
+	<test
+		name="exporter ‘Registration No’ ,Receipt No & ‘Save’ button displayed only for department user">
+		<classes>
+			<class name="com.ptl.testcases.RequestCopiesTest"></class>
+		</classes>
+	</test>
+	<test
+		name="Exporter Registration No,Receipt No, not displayed to the exporter.">
+		<classes>
+			<class name="com.ptl.testcases.RequestCopiesTest"></class>
+		</classes>
+	</test>
+	<test
+		name=" Exporter can request copies of COO by entering the relevant COO Reference number">
+		<classes>
+			<class name="com.ptl.testcases.reqcopiesdeptadmin"></class>
+		</classes>
+	</test>
+	<test
+		name="Department user can request copies of COO using exporter’s registration no & COO Reference">
+		<classes>
+			<class name="com.ptl.testcases.reqcopiesdeptadmin"></class>
+		</classes>
+	</test>
+	<test
+		name="All data fields will be cleared when clicked on the ‘Reset’ button">
+		<classes>
+			<class name="com.ptl.testcases.resetbuttontest"></class>
+		</classes>
+	</test>
+	<test name="department user is able to select exporter registration number">
+		<classes>
+			<class name="com.ptl.testcases.reqcopiesdeptadmin"></class>
+		</classes>
+	</test>
+	<test
+		name="department user can request for COO copies of a selected exporter">
+		<classes>
+			<class name="com.ptl.testcases.reqcopiesdeptadmin"></class>
+		</classes>
+	</test>
+	<test name="user can logout from the system">
+		<classes>
+			<class name="com.ptl.testcases.LogoutTest"></class>
+		</classes>
+	</test>
+	<test name="COO in Printed status can be Cancelled">
+		<classes>
+			<class name="com.ptl.testcases.printcancelled"></class>
+		</classes>
+	</test>
+	<test name="COO in Reprinted status can be Cancelled">
+		<classes>
+			<class name="com.ptl.testcases.reprintcancelled"></class>
+		</classes>
+	</test>
 </suite>
 
 
